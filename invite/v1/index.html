@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Micro Enterprise</title>
+    <link rel="stylesheet" type="text/css" href="frontend/styles.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body style="background-color:#041620">
+    <div class="container">
+        <div class="container center-align" id="validation-container">
+            <h1> Micro Enterprise </h1> 
+            <p id="enterprompt"> Enter your invite code below: </p>
+            <input type= "text" name="validation-input" id="validation-input"><br><br>
+            <button id='submit-code' class="btn waves-effect waves-light" name="action" 
+           ">Check Code
+            </button>
+        </div>
+        <div id='form-container' class="card-panel white" >
+            
+            <form class="col s12" id='psnl-form' method="POST">
+                <div class="row">
+                    <div class="input-field col s6">
+                      <input id="first-name" name="first-name" type="text" class="validate" required>
+                      <label for="first-name">First Name</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                      <input id="last-name" name="last-name" type="text" class="validate" required>
+                      <label for="last-name">Last Name</label>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="input-field col s6">
+                      <input id="std-no" name="std-no" type="text" class="validate" required>
+                      <label for="std-no">Student Number</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-field col s6">
+                      <input id="email" name="email" type="email" class="validate" required>
+                      <label for="email">Email</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                      <input id="utorid" name="utorid" type="text" class="validate" required>
+                      <label for="utorid">UTorId</label>
+                    </div>
+                </div>
+
+                <button type='button' id= 'form-btn' class="btn waves-effect waves-light" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+        <div id='onboard-msg' class="card-panel white">
+            <div class="container" id="letter">
+                <h3> <b>Congratulations <i><span id='savedFirstName'></span>!</i></b></h3>
+                <p id='content' class='flow-text'>
+                    
+This step that you have chosen will accelerate your life multifold and we aim to make YOU one of the most employable undergraduates in all of Canada. We plan on orchestrating a professional lifecycle where you will succeed even if you initially lack experience.
+<br><br>
+Your lifecycle in Micro-Enterprise starts off with receiving certified training and upon completion, you get recruited by one of our virtual companies. Micro-Enterprise comprises of a fleet of virtual companies, with each of those being a single organizational unit which work on 1 or 2 real world projects from clients.
+<br><br>
+Upon completion of working for a semester (you can choose between 5 - 20 hours a week) you will get an internship letter from the company of the client whose project you worked on. This cycle repeats, with you potentially getting a promotion every semester.
+<br><br>
+This means that you can start as a developer, rise to being a team lead, move on to being a data architect, a CTO, COO and perhaps ultimately even be the CEO of one of the virtual companies.
+<br><br>
+Throughout the next few semesters, our team will connect with local and multinational companies to get this program more and more recognised, so that having the seal of Micro-Enterprise in your experience letters will show the world that you are a class above the rest.
+<br><br>
+We are delighted to have you as a member of Micro-Enterprise and we hope that this magical experience crafted by our team catapults you to realms never seen before by an undergraduate, giving you the ultimate edge.
+<br><br>
+CMO of Micro-Enterprise,
+<br>
+Karthik Immaneni
+
+                </p>
+            </div>
+        </div>
+    </div>   
+    <script src="frontend/script.js"></script>
+
+    <footer class="footer">
+        <p>Developed By: Likhit, Harshvardhan, Harshit and Karthik</p>
+    </footer>
+</body>
+</html>
